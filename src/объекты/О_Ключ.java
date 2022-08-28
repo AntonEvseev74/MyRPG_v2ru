@@ -1,5 +1,7 @@
 package объекты;
 
+/* Создано: Евсеев АВ от 28.09.2022 */
+
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
@@ -16,10 +18,10 @@ public class О_Ключ extends Объект {
         }
     }
 
-    public О_Ключ(int worldX, int worldY) {
+    public О_Ключ(int x, int y) {
         имя = "Ключ";
-        this.worldX = worldX;
-        this.worldY = worldY;
+        this.мирХ = x;
+        this.мирУ = y;
         установитьКартинку(файлКартинка);
     }
 }

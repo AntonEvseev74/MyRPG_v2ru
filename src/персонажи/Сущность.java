@@ -1,13 +1,11 @@
 package персонажи;
 
+/* Создано: Евсеев АВ от 28.09.2022 */
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Сущность {
- //  public static final String ВЕРХ = "верх";
- //  public static final String НИЗ = "низ";
- //  public static final String ЛЕВО = "лево";
- //  public static final String ПРАВО = "право";
 
     public int x, y; // координаты
     public int скорость; // скорость
@@ -17,6 +15,6 @@ public class Сущность {
     public int номерКадра = 1;
 
     public Rectangle зонаВзаимодействия; // прямоугольник (твердая часть сущности, которая упирается в объекты)
-    public int зонаВзаимодейстияОригинальнаяX, зонаВзаимодейстияОригинальнаяY;
+    public int зонаВзаимодейстияПоУмолчаниюX, зонаВзаимодейстияПоУмолчаниюY;
     public boolean этоСтолкновение = false;
 }
