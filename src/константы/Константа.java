@@ -7,4 +7,7 @@ public class Константа {
     public static final String ВНИЗ = "вниз";
     public static final String ВЛЕВО = "влево";
     public static final String ВПРАВО = "вправо";
+
+    public static final String ЗЕЛЬЕ_ЗДОРОВЬЯ = "зелье здоровья";
+    public static final String ЗЕЛЬЕ_УСКОРЕНИЯ = "зелье ускорения";
 }

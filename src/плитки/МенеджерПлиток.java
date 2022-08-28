@@ -79,7 +79,7 @@ public class МенеджерПлиток {
         }
     }
 
-    public void draw(Graphics2D g2) {
+    public void рисовать(Graphics2D g2) {
 
         int мирСтолбец = 0;
         int мирСтрока = 0;

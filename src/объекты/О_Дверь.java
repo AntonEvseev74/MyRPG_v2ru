@@ -6,7 +6,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class О_Дверь extends Объект {
+public class О_Дверь extends ОбъектПредмет {
     File файлКартинкаЗакрытаяДверь = new File("src/ресурсы/объекты/door.png");
     File файлКартинкаОткрытаяДверь = new File("src/ресурсы/объекты/door_open.png");
 

@@ -6,7 +6,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class О_Ключ extends Объект {
+public class О_Ключ extends ОбъектПредмет {
     File файлКартинка = new File("src/ресурсы/объекты/key.png");
 
     public О_Ключ() {

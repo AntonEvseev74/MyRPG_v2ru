@@ -17,7 +17,8 @@ public class ЮзерИнтерфейс {
     public String сообщение = "";
     int сообщениеТаймер = 0;
 
-    public boolean этоКонецИгры = false;
+    public static boolean этоКонецИгры = false;
+    public static boolean этоПобеда = false;
 
     public ЮзерИнтерфейс(ИгроваяПанель игроваяПанель) {
         this.игроваяПанель = игроваяПанель;
@@ -33,11 +34,31 @@ public class ЮзерИнтерфейс {
     }
 
     public void draw(Graphics2D g2) {
-        if (этоКонецИгры) { // Если кнец игры
+        if (этоКонецИгры && этоПобеда) { // Если кнец игры
             g2.setFont(arial_40_PLAIN);
             g2.setColor(Color.white);
 
             String text = "!!!!!!!!!!!!!!Вы нашли сундук!!!!!!!!!!!!!!!";
+            int textLength= (int) g2.getFontMetrics().getStringBounds(text, g2).getWidth();
+            int x = игроваяПанель.ширинаЭкрана / 2 - textLength / 2;
+            int y = игроваяПанель.высотаЭкрана / 2 - (игроваяПанель.размерПлитки * 3);
+            g2.drawString(text, x, y);
+
+            g2.setFont(arial_80_BOLD);
+            g2.setColor(Color.red);
+            text = "ИГРА ОКОНЧЕНА";
+            textLength= (int) g2.getFontMetrics().getStringBounds(text, g2).getWidth();
+            x = игроваяПанель.ширинаЭкрана / 2 - textLength / 2;
+            y = игроваяПанель.высотаЭкрана / 2 + (игроваяПанель.размерПлитки * 2);
+            g2.drawString(text, x, y);
+
+            игроваяПанель.музыка.выкл();
+            игроваяПанель.потокИгры = null;
+        } else if (этоКонецИгры){
+            g2.setFont(arial_40_PLAIN);
+            g2.setColor(Color.white);
+
+            String text = "Вы убиты! Это конец!";
             int textLength= (int) g2.getFontMetrics().getStringBounds(text, g2).getWidth();
             int x = игроваяПанель.ширинаЭкрана / 2 - textLength / 2;
             int y = игроваяПанель.высотаЭкрана / 2 - (игроваяПанель.размерПлитки * 3);
