@@ -1,5 +1,7 @@
 package главный;
 
+/* Создано: Евсеев АВ от 28.09.2022 */
+
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;

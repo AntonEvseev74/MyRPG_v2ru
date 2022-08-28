@@ -1,5 +1,7 @@
 package плитки;
 
+/* Создано: Евсеев АВ от 28.09.2022 */
+
 import главный.ИгроваяПанель;
 
 import javax.imageio.ImageIO;

@@ -1,5 +1,7 @@
 package главный;
 
+/* Создано: Евсеев АВ от 28.09.2022 */
+
 import javax.swing.*;
 import java.io.IOException;
 

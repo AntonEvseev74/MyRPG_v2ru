@@ -1,7 +1,8 @@
 package объекты;
 
-import главный.ИгроваяПанель;
+/* Создано: Евсеев АВ от 28.09.2022 */
 
+import главный.ИгроваяПанель;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
